@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+.result > ul > li {
+    display: block;
+}
