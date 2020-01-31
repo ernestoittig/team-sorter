@@ -1,6 +1,6 @@
 {
   "name": "teams",
-  "version": "0.1.0",
+  "version": "0.1.0+1",
   "description": "A project for randomly and evenly picking teams",
   "main": "dist/library.js",
   "files": ["dist/*"],
@@ -8,6 +8,7 @@
   "repository": "ernestoittig/teams",
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "start": "node dist/server.js",
     "web:build": "rollup -c",
     "web:dev": "env NODE_ENV=development rollup -wc",
