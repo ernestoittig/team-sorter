@@ -3,7 +3,9 @@
   "version": "0.1.0+1",
   "description": "A project for randomly and evenly picking teams",
   "main": "dist/library.js",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "types": "dist/library.d.ts",
   "repository": "ernestoittig/teams",
   "scripts": {
