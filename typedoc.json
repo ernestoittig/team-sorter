@@ -1,0 +1,7 @@
+{
+    "inputFiles": ["src/library.ts"],
+    "exclude": ["src/server.ts"],
+    "mode": "file",
+    "out": "doc",
+    "readme": "none"
+}

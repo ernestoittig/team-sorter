@@ -16,7 +16,8 @@
     "web:dev": "env NODE_ENV=development rollup -wc",
     "web:start": "http-server",
     "test": "mocha -r ts-node/register test/*",
-    "lint": "eslint src/* test/*; exit 0"
+    "lint": "eslint src/* test/*; exit 0",
+    "doc": "typedoc"
   },
   "author": "Ernesto Ittig <e.ittig@gmail.com>",
   "license": "MIT",
@@ -33,6 +34,8 @@
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-typescript": "^1.0.1",
     "ts-node": "^8.5.4",
+    "typedoc": "^0.16.9",
+    "typedoc-plugin-markdown": "^2.2.16",
     "typescript": "^3.7.3"
   }
 }
