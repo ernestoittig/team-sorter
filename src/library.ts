@@ -1,3 +1,6 @@
+/**
+ * A list of people that can be sorted into teams
+ */
 export class Lista {
     private _arr: string[];
 
@@ -25,11 +28,19 @@ export class Lista {
         if (del) this._arr.splice(index, 1);
         return value;
     }
+    /**
+     * Create an array with all the people in this instance
+     */
     get array(): string[] {
         return [...this._arr];
     }
 }
 
+/**
+ *  Sort people into teams
+ * @param lista The list of people to sort into teams
+ * @param numberOfTeams The number of teams to sort the people into
+ */
 export function makeTeams(lista: Lista, numberOfTeams: number): string[][] {
     let teams = [];
     while (numberOfTeams > 0 && lista.array.length > 0) {
