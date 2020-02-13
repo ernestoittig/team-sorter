@@ -9,7 +9,7 @@ const people = new Lista(['Person 1', 'Person 2', 'Person 2']);
 console.log(makeTeams(people, 2));
 ```
 ### Documentation
-The documentation can be found [here](doc/globals.md)
+The documentation can be found [here](doc/README.md)
 
 Additionaly, if you clone the repository, you can use the following implementations:
 
