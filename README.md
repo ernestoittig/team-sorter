@@ -1,4 +1,17 @@
-Small app for sorting people into teams with [Node.js](#nodejs) and [web](#web) implementations
+Small library for sorting people into teams
+
+## Example Usage
+```ts
+import { Lista, makeTeams } from 'team-sorter';
+
+const people = new Lista(['Person 1', 'Person 2', 'Person 2']);
+// Sort people into 2 teams
+console.log(makeTeams(people, 2));
+```
+### Documentation
+The documentation can be found [here](doc/globals.md)
+
+Additionaly, if you clone the repository, you can use the following implementations:
 
 ### Node.js
 
