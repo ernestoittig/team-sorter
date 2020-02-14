@@ -1,15 +1,13 @@
 import { Lista, makeTeams } from './library';
 
-let gebi = (arg: string) =>  document.getElementById(arg);
-let gebiInput = (arg: string) =>  <HTMLInputElement> gebi(arg);
-let qs = (q): HTMLElement => document.querySelector(q);
+let gebiInput = (arg: string) =>  <HTMLInputElement> document.getElementById(arg);
 
-gebi('default').addEventListener('click', () => {
+document.getElementById('default').addEventListener('click', () => {
     gebiInput('people').value = 'Ernesto Ittig\nFrancesca Modena\nTriana Macedo';
     gebiInput('groups').value = '2';
 });
 
-gebi('teams-form').addEventListener('submit', (event) => {
+document.getElementById('teams-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const people: string = gebiInput('people').value;
     const groups = parseInt(gebiInput('groups').value);
@@ -26,5 +24,5 @@ gebi('teams-form').addEventListener('submit', (event) => {
         result += '</ul>';
     }
 
-    qs('.result').innerHTML = result;
+    document.querySelector('.result').innerHTML = result;
 }, false);
