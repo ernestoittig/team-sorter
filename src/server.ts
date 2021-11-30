@@ -7,13 +7,13 @@ const rl = createInterface({
     output: process.stdout,
 });
 
-let ask = (query: string): Promise<string> => new Promise((reslove) => {
+const ask = (query: string): Promise<string> => new Promise((reslove) => {
     rl.question(query, input => reslove(input));
 });
 
 async function main() {
-    let people = readFileSync('people', 'utf8');
-    let n = parseInt(await ask('How many teams? '));
+    const people = readFileSync('people', 'utf8');
+    const n = parseInt(await ask('How many teams? '));
     console.log(makeTeams(Lista.fromString(people), n));
     rl.close();
 }

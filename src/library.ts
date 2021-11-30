@@ -14,7 +14,7 @@ export class Lista {
      * @param str 
      */
     static fromString(str: string) {
-        let arr = str.split('\n').filter(item => ! /^\s*$/g.test(item));
+        const arr = str.split('\n').filter(item => ! /^\s*$/g.test(item));
         return new this(arr);
     }
 
@@ -23,8 +23,8 @@ export class Lista {
      * @param del Whether to delete the retrieved item
      */
     getRandom(del = false): string {
-        let index = Math.floor(Math.random() * this._arr.length);
-        let value = this._arr[index];
+        const index = Math.floor(Math.random() * this._arr.length);
+        const value = this._arr[index];
         if (del) this._arr.splice(index, 1);
         return value;
     }
@@ -42,10 +42,10 @@ export class Lista {
  * @param numberOfTeams The number of teams to sort the people into
  */
 export function makeTeams(lista: Lista, numberOfTeams: number): string[][] {
-    let teams = [];
+    const teams = [];
     while (numberOfTeams > 0 && lista.array.length > 0) {
-        let team = [];
-        let numberOfPeople = lista.array.length;
+        const team = [];
+        const numberOfPeople = lista.array.length;
         for (let j = 0; j < Math.round(numberOfPeople / numberOfTeams); ++j) {
             team.push(lista.getRandom(true));
         }

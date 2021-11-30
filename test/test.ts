@@ -6,7 +6,7 @@ describe('Lista', () => {
     describe('constructor', () => {
         it('should make an instance with all the elements of the array', () => {
             expect(new Lista(['a', 'b', 'c']).array).to.be.deep.equal(['a', 'b', 'c']);
-            let weirdArray = ['233535', '32523535', '23555', 'ethehehwrth', '[]][kthkth', '093938069'];
+            const weirdArray = ['233535', '32523535', '23555', 'ethehehwrth', '[]][kthkth', '093938069'];
             expect(new Lista(weirdArray).array).to.be.deep.equal(weirdArray);
         });
     });
